@@ -1,0 +1,66 @@
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+} */
+
+#main{
+    border: 1px solid red;
+    padding: 20px;
+    width: 50%;
+    height: 400px;
+    /* overflow: auto; */
+    position: relative;
+}
+#div1{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    display: inline-block;
+    /* position: static; it is bydefault */
+    position: absolute;
+    /* Positioned withrespect to its 
+    positioned parrent container or body tag */
+
+    top: 300px;
+   
+}
+#div2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    position: relative; 
+    /* Position:relative with respect to its original position */
+    top: 100px;
+  
+}
+#div3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+    position: fixed;
+    /* positioned:fixed means its position
+    is calculated with respect to viewport */
+    right: 30px;
+    bottom: 3px;
+ 
+}
+#green{
+    /* property:value; */
+    color: green;
+}
+#initial{
+    display: block;
+}
+#inherit{
+    display: block;
+    color: inherit;
+    /* Color property would be inheritd from its parent container */
+}
+#none{
+    display: block;
+    color: red;
+    
+}
